@@ -4,4 +4,12 @@ def show_history():
     file =open(HISTORY_FILE,"r")
     lines = file.readlines()
 
-    if
+    if len(lines) == 0:
+        print("No history found!")
+    else:
+        for line in reversed(lines):
+            print(line.strip())
+    file.close()            
+
+
+    
