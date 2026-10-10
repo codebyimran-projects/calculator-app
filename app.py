@@ -18,3 +18,9 @@ def clear_history():
     print("History cleared")
 
 
+def save_to_history(equation, result):
+    file = open(HISTORY_FILE,"a")
+    file.write(equation, "=" , result)
+    file.close()
+
+
